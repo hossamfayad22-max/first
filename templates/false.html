@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            flex-direction: column;
+            
+        }
+        /* ========== BASE CSS (تستخدمه في أي مشروع) ========== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+        h1{
+            background-color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            color: #d32f2f;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            font-size: 22px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+   <h1>Check your username and password</h1>
+   <h2><a class="out" href="/signin">retry login</a></h2>
+</body>
+</html>

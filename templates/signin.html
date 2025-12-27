@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin page</title>
+</head>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .Signin{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    form{
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    button{
+        padding: 10px;
+        background-color: #4CAF50; 
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover{
+        background-color: #45a049; 
+    }
+    .switch{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    color: #4CAF50;
+}
+/* ========== BASE CSS (تستخدمه في أي مشروع) ========== */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 992px) {
+}
+
+
+
+</style>
+
+<body>
+    <h1>Sign in</h1>
+
+    <div class="Signin">
+        <form method="POST">
+            <input type="text" name="usernamee" placeholder="enter your user">
+            <input type="password" name="passwordd" placeholder="enter your password">
+            <button type="submit">Sign in</button>
+            <a class="switch" href="/signup">Don’t have an account? Sign up</a>
+
+
+        </form>
+    </div>
+
+</body>
+</html>
